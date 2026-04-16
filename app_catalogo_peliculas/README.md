@@ -1,4 +1,4 @@
-# app_catalogo_peliculas
+# flutter_catalogo_peliculas
 
 A new Flutter project.
 

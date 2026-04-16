@@ -1,6 +1,6 @@
 {
-    "name": "app_catalogo_peliculas",
-    "short_name": "app_catalogo_peliculas",
+    "name": "flutter_catalogo_peliculas",
+    "short_name": "flutter_catalogo_peliculas",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

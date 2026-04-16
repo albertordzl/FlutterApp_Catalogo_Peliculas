@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'welcome_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -9,33 +11,22 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Welcome App',
-      home: const MyHomePage(),
-      debugShowCheckedModeBanner: false,
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Welcome to Flutter'),
-        centerTitle: true,
-      ),
-      body: const Center(
-        child: Text(
-          'Hello World',
-          style: TextStyle(
-            fontSize: 24,
-          ),
+    return ChangeNotifierProvider(
+      create: (context) => MyAppState(),
+      child: MaterialApp(
+        title: 'CineVerse', // Cambiamos el nombre
+        debugShowCheckedModeBanner: false, // Quita la banda roja de "debug"
+        theme: ThemeData(
+          useMaterial3: true,
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.red), // Rojo Cine
         ),
+        // CAMBIO CLAVE: Aquí llamamos a tu nueva pantalla
+        home: WelcomeScreen(), 
       ),
     );
   }
 }
 
+class MyAppState extends ChangeNotifier {
+
+}
