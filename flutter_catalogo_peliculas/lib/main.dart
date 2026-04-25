@@ -14,8 +14,8 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => MyAppState(),
       child: MaterialApp(
-        title: 'CineVerse', // Cambiamos el nombre
-        debugShowCheckedModeBanner: false, // Quita la banda roja de "debug"
+        title: 'CineVerse',
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.red), // Rojo Cine
