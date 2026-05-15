@@ -1,8 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'welcome_screen.dart';
+import 'package:firebase_core/firebase_core.dart'; // Importa Firebase
+import 'firebase_options.dart'; // Este archivo se generó con flutterfire configure
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  
+  // Inicialización de Firebase
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  
   runApp(MyApp());
 }
 

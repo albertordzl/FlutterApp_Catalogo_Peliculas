@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "721466411230",
+    "project_id": "cineverse-2eb6b",
+    "storage_bucket": "cineverse-2eb6b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721466411230:android:c35cc04c0a1348fd2e5a4f",
+        "android_client_info": {
+          "package_name": "com.example.flutter_catalogo_peliculas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs_k2otELgvoXvW1yCZTEpGcn3mk5LJU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

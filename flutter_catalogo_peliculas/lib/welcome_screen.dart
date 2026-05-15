@@ -15,7 +15,7 @@ class WelcomeScreen extends StatelessWidget {
             ),
             fit: BoxFit.cover, // Para que cubra toda la pantalla
             colorFilter: ColorFilter.mode(
-              Colors.black.withOpacity(0.6), // Oscurece la imagen para que el texto resalte
+              Colors.black.withValues(alpha: 0.6), // Oscurece la imagen para que el texto resalte
               BlendMode.darken,
             ),
           ),
@@ -29,7 +29,7 @@ class WelcomeScreen extends StatelessWidget {
                 Icon(
                   Icons.movie_filter,
                   size: 120,
-                  color: Colors.redAccent.withOpacity(0.3),
+                  color: Colors.redAccent.withValues(alpha: 0.3),
                 ),
                 Icon(
                   Icons.movie,
@@ -67,7 +67,7 @@ class WelcomeScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.redAccent.withOpacity(0.4),
+                      color: Colors.redAccent.withValues(alpha: 0.4),
                       blurRadius: 10,
                       offset: const Offset(0, 5),
                     ),
